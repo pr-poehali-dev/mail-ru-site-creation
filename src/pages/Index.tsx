@@ -1,16 +1,16 @@
-
-import React from 'react';
-import Navbar from '@/components/Navbar';
-import LoginForm from '@/components/LoginForm';
-import Features from '@/components/Features';
-import Footer from '@/components/Footer';
-import Icon from '@/components/ui/icon';
+import React from "react";
+import Navbar from "@/components/Navbar";
+import LoginForm from "@/components/LoginForm";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
+import Icon from "@/components/ui/icon";
+import MailboxPreview from "@/components/MailboxPreview";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Герой секция */}
         <section className="bg-gradient-to-b from-postRussia-lightBlue to-white py-12 md:py-16">
@@ -21,35 +21,62 @@ const Index = () => {
                   Электронная почта для всех задач
                 </h1>
                 <p className="text-lg text-gray-700 mb-6">
-                  Надежный и безопасный сервис для отправки и получения писем. 
-                  Быстрая доставка, удобный интерфейс, защита от спама и вирусов.
+                  Надежный и безопасный сервис для отправки и получения писем.
+                  Быстрая доставка, удобный интерфейс, защита от спама и
+                  вирусов.
                 </p>
                 <div className="flex flex-wrap gap-4 mb-6">
                   <div className="flex items-center">
-                    <Icon name="Check" className="text-green-500 mr-2" size={20} />
-                    <span className="text-gray-700">Бесплатная регистрация</span>
+                    <Icon
+                      name="Check"
+                      className="text-green-500 mr-2"
+                      size={20}
+                    />
+                    <span className="text-gray-700">
+                      Бесплатная регистрация
+                    </span>
                   </div>
                   <div className="flex items-center">
-                    <Icon name="Check" className="text-green-500 mr-2" size={20} />
+                    <Icon
+                      name="Check"
+                      className="text-green-500 mr-2"
+                      size={20}
+                    />
                     <span className="text-gray-700">Мобильный доступ</span>
                   </div>
                   <div className="flex items-center">
-                    <Icon name="Check" className="text-green-500 mr-2" size={20} />
+                    <Icon
+                      name="Check"
+                      className="text-green-500 mr-2"
+                      size={20}
+                    />
                     <span className="text-gray-700">Большой объем ящика</span>
                   </div>
                 </div>
               </div>
-              
+
               <div className="md:w-1/2">
                 <LoginForm />
               </div>
             </div>
           </div>
         </section>
-        
+
+        {/* Секция с демо почтового ящика */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
+              Современный интерфейс для работы с письмами
+            </h2>
+            <div className="max-w-4xl mx-auto">
+              <MailboxPreview />
+            </div>
+          </div>
+        </section>
+
         {/* Секция с преимуществами */}
         <Features />
-        
+
         {/* Секция с призывом к действию */}
         <section className="py-12 md:py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6 text-center">
@@ -57,7 +84,7 @@ const Index = () => {
               Присоединяйтесь к миллионам пользователей
             </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Создайте электронную почту прямо сейчас и оцените все преимущества 
+              Создайте электронную почту прямо сейчас и оцените все преимущества
               нашего сервиса. Это абсолютно бесплатно!
             </p>
             <button className="post-button text-lg px-8 py-3">
@@ -67,7 +94,7 @@ const Index = () => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

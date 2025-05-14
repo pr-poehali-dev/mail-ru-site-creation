@@ -28,12 +28,6 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        postRussia: {
-          blue: "#0F4C81",
-          lightBlue: "#E9F0F8",
-          red: "#E30613",
-          gray: "#F5F5F5",
-        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -66,12 +60,17 @@ const config = {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
           border: "hsl(var(--sidebar-border))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          ring: "hsl(var(--sidebar-ring))",
           accent: "hsl(var(--sidebar-accent))",
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          ring: "hsl(var(--sidebar-ring))",
         },
+        postRussia: {
+          blue: "#0F4C81",
+          lightBlue: "#EEF5FC",
+          red: "#E30613",
+          gray: "#F5F5F5",
+          darkGray: "#333333"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
